@@ -3,13 +3,9 @@ import pandas as pd
 
 with open("../src/modelo_LR_Ridge_alp1_fit-inter0_max-it100_solv-sag.sav", "rb") as f:
     model = load(f)
-
-# Si se ha entrenado el modelo con el dataset ganador, por ejemplo el que se aplica el escalado min-max, se carga también
-#...
-
+    
 X_train_CON_outliers = pd.read_excel("../src/X_train_CON_outliers.xlsx")
 
-# -----------------
 
 import streamlit as st
 
